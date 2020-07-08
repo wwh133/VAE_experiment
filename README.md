@@ -31,7 +31,7 @@
 9. 다시 ppg폴더로 와서 model/timit_sp_ppg_mono 폴더 생성후 아래 구글드라이브 링크의 .zip 파일 다운후 압축해제
 10. https://drive.google.com/file/d/1cBmWiQ3GYW9uvrm_AeModCwBT5b-fDVQ/view?usp=sharing 
 11. 다시 ppg 폴더로 와서 python3 ppg_vcc2018.py 실행 
-12. bash run_all.sh 실행
+12. bash run_all.sh 실행 (nohup 실행 권장)
 13. python3 print_stat.py 실행하여 각 모델별 MCD 및 MSD 값 확인
 
 ## 해결해야 될 문제
