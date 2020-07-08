@@ -1,1 +1,1 @@
-# VAE_experiment
+# CycleVAE 실험 코드
