@@ -1,5 +1,5 @@
 # CycleVAE 실험 코드
-## 폴더
+## 폴더 test
 - corpus: VCC2018 코퍼스
 - preprocess: 각 코퍼스 별 preprocess 코드 모음 (현재는 VCC2018만 존재)
 - data: VCC2018 코퍼스 preprocess된 결과 저장
