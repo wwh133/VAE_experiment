@@ -1,5 +1,5 @@
 import os
-
+import librosa
 from preprocess_tools import *
 
 speaker_list = ['VCC2SF1','VCC2SF2','VCC2SM1','VCC2SM2'] 
