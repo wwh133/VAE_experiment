@@ -3,7 +3,8 @@ mkdir -p stats
 
 echo base start
 for trial in `seq 0 0`; do
-    for mtype in MD VAE3 VAE2 VAE1; do
+    #for mtype in MD VAE3 VAE2 VAE1; do
+    for mtype in VAE3; do
         python3 -u train_base.py --model_type=$mtype --seed=${trial} --model_dir=model/${mtype} || exit 1;
         python3 -u convert.py --model_type=$mtype --model_path=model/${mtype} || exit 1;
         python3 -u calculate/calculate.py --test_dir=result/${mtype} > stats/${mtype}_${trial}.txt || exit 1;
