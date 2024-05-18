@@ -21,18 +21,18 @@
 
 ## 세팅방법 (다운받은 프로젝트 폴더 내에서 실행)
 0. virtualenv venv
-   source venv/bin/activate
-1. pip3 install torch pyworld pysptk h5py numpy kaldi-io librosa scipy scikit-learn fastdtw 설치
-2. https://datashare.is.ed.ac.uk/handle/10283/3061 접속
-3. training data for building parallel and non-parallel VC systems released to participants (117.0Mb) 다운로드 후 압축 해제
-4. evaluation data (source speaker's data) released to participants (31.79Mb) 다운로드 후 압축 해제
-5. vcc2018_training 폴더를 corpus 폴더에 train이라는 이름으로 저장
-6. vcc2018_evaluation 폴더를 corpus 폴더에 test라는 이름으로 저장
-7. python3 preprocess/preprocess-vcc2018.py 실행
-8. kaldi 설치 - ppg 파일 추출시 필요 (연구실 서버에는 설치 되어있음, 개인 pc 에서 작업시 설치) 
-9. 다시 ppg폴더로 와서 model/timit_sp_ppg_mono 폴더 생성후 아래 구글드라이브 링크의 .zip 파일 다운후 압축해제
-10. https://drive.google.com/file/d/1cBmWiQ3GYW9uvrm_AeModCwBT5b-fDVQ/view?usp=sharing 
-11. 다시 ppg 폴더로 와서 python3 ppg_vcc2018.py 실행 
-12. bash run_all.sh 실행 (nohup 실행 권장)
-13. python3 print_stat.py 실행하여 각 모델별 MCD 및 MSD 값 확인
+1. source venv/bin/activate
+2. pip3 install torch pyworld pysptk h5py numpy kaldi-io librosa scipy scikit-learn fastdtw 설치
+3. https://datashare.is.ed.ac.uk/handle/10283/3061 접속
+4. training data for building parallel and non-parallel VC systems released to participants (117.0Mb) 다운로드 후 압축 해제
+5. evaluation data (source speaker's data) released to participants (31.79Mb) 다운로드 후 압축 해제
+6. vcc2018_training 폴더를 corpus 폴더에 train이라는 이름으로 저장
+7. vcc2018_evaluation 폴더를 corpus 폴더에 test라는 이름으로 저장
+8. python3 preprocess/preprocess-vcc2018.py 실행
+9. kaldi 설치 - ppg 파일 추출시 필요 (연구실 서버에는 설치 되어있음, 개인 pc 에서 작업시 설치) 
+10. 다시 ppg폴더로 와서 model/timit_sp_ppg_mono 폴더 생성후 아래 구글드라이브 링크의 .zip 파일 다운후 압축해제
+11. https://drive.google.com/file/d/1cBmWiQ3GYW9uvrm_AeModCwBT5b-fDVQ/view?usp=sharing 
+12. 다시 ppg 폴더로 와서 python3 ppg_vcc2018.py 실행 
+13. bash run_all.sh 실행 (nohup 실행 권장)
+14. python3 print_stat.py 실행하여 각 모델별 MCD 및 MSD 값 확인
 
