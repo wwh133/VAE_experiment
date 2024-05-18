@@ -24,9 +24,9 @@
 1. source venv/bin/activate
 2. pip3 install torch pyworld pysptk h5py numpy kaldi-io librosa scipy scikit-learn fastdtw 설치
 3. https://datashare.is.ed.ac.uk/handle/10283/3061 접속
-4. training data for building parallel and non-parallel VC systems released to participants (117.0Mb) 다운로드 후 압축 해제
+4. training data for building parallel and non-parallel VC systems released to participants (117.0Mb) 다운로드 후 압축 해제\n
    4-1. wget https://datashare.ed.ac.uk/bitstream/handle/10283/3061/vcc2018_database_training.zip
-5. evaluation data (source speaker's data) released to participants (31.79Mb) 다운로드 후 압축 해제
+5. evaluation data (source speaker's data) released to participants (31.79Mb) 다운로드 후 압축 해제\n
    5-1. wget https://datashare.ed.ac.uk/bitstream/handle/10283/3061/vcc2018_database_evaluation.zip
 6. vcc2018_training 폴더를 corpus 폴더에 train이라는 이름으로 저장
 7. vcc2018_evaluation 폴더를 corpus 폴더에 test라는 이름으로 저장
