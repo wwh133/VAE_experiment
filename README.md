@@ -37,4 +37,5 @@
 12. 다시 ppg 폴더로 와서 python3 ppg_vcc2018.py 실행 
 13. <code><pre> bash run_all.sh </code></pre>
 14. python3 print_stat.py 실행하여 각 모델별 MCD 및 MSD 값 확인
+15. loss graph 출력 <code><pre> bash run_graph.sh </code></pre>
 
