@@ -30,7 +30,7 @@
 5. vcc2018_training 폴더를 corpus 폴더에 train이라는 이름으로 저장
 6. vcc2018_evaluation 폴더를 corpus 폴더에 test라는 이름으로 저장
 7. 데이터 전처리 <code><pre> python3 preprocess/preprocess-vcc2018.py </code></pre>
-8. kaldi 설치 - ppg 파일 추출시 필요 (연구실 서버에는 설치 되어있음, 개인 pc 에서 작업시 설치) (9~12번은 필요 없음)
+8. kaldi 설치 - ppg 파일 추출시 필요 (8~11번은 필요 없음)
 9. 다시 ppg폴더로 와서 model/timit_sp_ppg_mono 폴더 생성후 아래 구글드라이브 링크의 .zip 파일 다운후 압축해제
 10. https://drive.google.com/file/d/1cBmWiQ3GYW9uvrm_AeModCwBT5b-fDVQ/view?usp=sharing 
 11. 다시 ppg 폴더로 와서 <code><pre> python3 ppg_vcc2018.py </code></pre> 
