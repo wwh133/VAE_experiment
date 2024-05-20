@@ -20,8 +20,7 @@
 - run.sh: 실험 진행 스크립트
 
 ## 세팅방법 (다운받은 프로젝트 폴더 내에서 실행)
-0. <code><pre> virtualenv venv </code></pre>
-1. <code><pre> source venv/bin/activate </code></pre>
+0. 가상환경 생성 <code><pre> virtualenv venv </code></pre> <code><pre> source venv/bin/activate </code></pre>
 2. <code><pre> pip3 install torch pyworld pysptk h5py numpy kaldi-io librosa scipy scikit-learn fastdtw </code></pre>
 3. https://datashare.is.ed.ac.uk/handle/10283/3061 접속
 4. training data for building parallel and non-parallel VC systems released to participants (117.0Mb) 다운로드 후 압축 해제
