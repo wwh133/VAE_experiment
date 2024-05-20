@@ -22,7 +22,7 @@
 ## 세팅방법 (다운받은 프로젝트 폴더 내에서 실행)
 0. 가상환경 생성 <code><pre> virtualenv </code></pre> <code><pre> source venv/bin/activate </code></pre>
 1. 패키지 설치 <code><pre> pip3 install torch pyworld pysptk h5py numpy kaldi-io librosa scipy scikit-learn fastdtw </code></pre>
-2. https://datashare.is.ed.ac.uk/handle/10283/3061 접속
+2. VCC2018 데이터 다운 https://datashare.is.ed.ac.uk/handle/10283/3061 접속
 3. training data for building parallel and non-parallel VC systems released to participants (117.0Mb) 다운로드 후 압축 해제
    <pre><code>	wget https://datashare.ed.ac.uk/bitstream/handle/10283/3061/vcc2018_database_training.zip    </code></pre>
 4. evaluation data (source speaker's data) released to participants (31.79Mb) 다운로드 후 압축 해제\n
