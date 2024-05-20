@@ -35,6 +35,6 @@
 10. https://drive.google.com/file/d/1cBmWiQ3GYW9uvrm_AeModCwBT5b-fDVQ/view?usp=sharing 
 11. 다시 ppg 폴더로 와서 <code><pre> python3 ppg_vcc2018.py </code></pre> 
 12. VAE 학습 -> Voice conversion -> MCD -> CycleVAE 학습 -> Voice conversion -> MCD <code><pre> bash run_all.sh </code></pre>
-13. <code><pre> python3 print_stat.py </code></pre> 실행하여 각 모델별 MCD 및 MSD 값 확인
-14. loss graph 출력 <code><pre> bash run_graph.sh </code></pre>
+13. 각 모델별 MCD 및 MSD 값 확인 <code><pre> python3 print_stat.py </code></pre> 
+14. Loss graph 출력 <code><pre> bash run_graph.sh </code></pre>
 
