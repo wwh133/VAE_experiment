@@ -35,7 +35,7 @@
 10. 다시 ppg폴더로 와서 model/timit_sp_ppg_mono 폴더 생성후 아래 구글드라이브 링크의 .zip 파일 다운후 압축해제
 11. https://drive.google.com/file/d/1cBmWiQ3GYW9uvrm_AeModCwBT5b-fDVQ/view?usp=sharing 
 12. 다시 ppg 폴더로 와서 python3 ppg_vcc2018.py 실행 
-13. VAE 학습 -> convert -> MCD -> CycleVAE 학습 -> convert -> MCD <code><pre> bash run_all.sh </code></pre>
+13. VAE 학습 -> Voice conversion -> MCD -> CycleVAE 학습 -> Voice conversion -> MCD <code><pre> bash run_all.sh </code></pre>
 14. python3 print_stat.py 실행하여 각 모델별 MCD 및 MSD 값 확인
 15. loss graph 출력 <code><pre> bash run_graph.sh </code></pre>
 
