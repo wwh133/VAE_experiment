@@ -155,7 +155,7 @@ print(model_dir)
 os.makedirs(model_dir+"/parm", exist_ok=True)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-#device = torch.device('cpu')
+#device = torch.device('cpu') # train use cpu
 
 latent_dim=8
 ## Encoder
