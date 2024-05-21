@@ -110,7 +110,7 @@ latent_dim=8
 is_MD=True if args.model_type == "MD" else False
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-#device = torch.device('cpu')
+#device = torch.device('cpu') # train use cpu
 
 ## Encoder
 Enc = model.Encoder(style_dim=4, latent_dim=latent_dim, vae_type=args.model_type)
