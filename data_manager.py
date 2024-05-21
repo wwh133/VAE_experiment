@@ -4,7 +4,7 @@ import torch
 ########################
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-#device = torch.device('cpu')
+#device = torch.device('cpu') # train use cpu
 
 def split_train_dev(datadict, train_percent=0.8):
     train_dict = dict()
