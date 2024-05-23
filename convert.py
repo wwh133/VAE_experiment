@@ -111,13 +111,13 @@ for source_spk in spk_list:
             # x = (coded_sp-sp_m_s) / sp_s_s
             x = np.expand_dims(x, axis=0)
             x = np.expand_dims(x, axis=0)
-            x = torch.Tensor(x).float().cuda().contiguous()
+            x = torch.Tensor(x).float().to(device).contiguous()
 
             logf0_norm = (np.log(f0)-logf0_m_s) / logf0_s_s
 
             for target_spk in spk_list:
                 style = VEC_DICT[target_spk]
-                y = torch.Tensor(style).float().cuda().contiguous()
+                y = torch.Tensor(style).float().to(device).contiguous()
 
                 with torch.no_grad():
                     z_mu, z_logvar, z = Enc(x, y)
