@@ -8,6 +8,10 @@ import pickle
 
 from speech_tools import world_decode_mc, world_speech_synthesis
 
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+#device = torch.device('cpu') # train use cpu
+
+
 def load_pickle(path):
     with open(path, 'rb') as f:
         return pickle.load(f)
@@ -51,13 +55,13 @@ if args.epoch == 0:
     Enc.load_state_dict(torch.load(model_dir+"/final_enc.pt"))
 else:
     Enc.load_state_dict(torch.load(model_dir+"/parm/"+str(args.epoch)+"_enc.pt"))
-Enc.cuda()
+Enc = Enc.to(device)
 Enc.eval()
 if args.model_type == "MD":
     Dec_dict=dict()
     for spk_id in spk_list:
         cur_Dec = model.Decoder(style_dim=4, latent_dim=latent_dim, vae_type=args.model_type)
-        cur_Dec.cuda()
+        cur_Dec = cur_Dec.to(device)
         cur_Dec.eval()
         if args.epoch == 0:
             cur_Dec.load_state_dict(torch.load(model_dir+"/final_"+spk_id+"_dec.pt"))
@@ -70,7 +74,7 @@ else:
         Dec.load_state_dict(torch.load(model_dir+"/final_dec.pt"))
     else:
         Dec.load_state_dict(torch.load(model_dir+"/parm/"+str(args.epoch)+"_dec.pt"))
-    Dec.cuda()
+    Dec = Dec.to(device)
     Dec.eval()
 
 feat_dir = "data/test"
