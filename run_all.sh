@@ -43,5 +43,5 @@ for trial in `seq 0 0`; do
     # python3 -u convert.py --model_type=VAE3 --model_path=model/VAE3_more_${trial} || exit 1;
     # python3 -u calculate/calculate.py --test_dir=result/VAE3_more_${trial} > stats/VAE3_more_${trial}.txt || exit 1;
 
-    echo further fnish
+    echo further finsh
 done
