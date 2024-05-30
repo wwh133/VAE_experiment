@@ -19,22 +19,22 @@
 - speech_tools.py: 其他必要的函数
 - run.sh: 实验进行脚本
 
-## 세팅방법 (다운받은 프로젝트 폴더 내에서 실행)
-0. 가상환경 생성 <code><pre> virtualenv </code></pre> <code><pre> source venv/bin/activate </code></pre>
-1. 패키지 설치 <code><pre> pip3 install torch pyworld pysptk h5py numpy kaldi-io librosa scipy scikit-learn fastdtw </code></pre>
-2. VCC2018 데이터 다운 https://datashare.is.ed.ac.uk/handle/10283/3061 접속
-3. training data for building parallel and non-parallel VC systems released to participants (117.0Mb) 다운로드 후 압축 해제
+## 设置方法(在下载的项目文件夹内运行)
+0. 创建虚拟环境 <code><pre> virtualenv </code></pre> <code><pre> source venv/bin/activate </code></pre>
+1. 安装包 <code><pre> pip3 install torch pyworld pysptk h5py numpy kaldi-io librosa scipy scikit-learn fastdtw </code></pre>
+2. 下载VCC2018数据 https://datashare.is.ed.ac.uk/handle/10283/3061 连接
+3. training data for building parallel and non-parallel VC systems released to participants (117.0Mb) 下载后解压
    <pre><code>	wget https://datashare.ed.ac.uk/bitstream/handle/10283/3061/vcc2018_database_training.zip    </code></pre>
-4. evaluation data (source speaker's data) released to participants (31.79Mb) 다운로드 후 압축 해제\n
+4. evaluation data (source speaker's data) released to participants (31.79Mb) 下载后解除压缩\n
    <pre><code> wget https://datashare.ed.ac.uk/bitstream/handle/10283/3061/vcc2018_database_evaluation.zip </code></pre>
-5. vcc2018_training 폴더를 corpus 폴더에 train이라는 이름으로 저장
-6. vcc2018_evaluation 폴더를 corpus 폴더에 test라는 이름으로 저장
-7. 데이터 전처리 <code><pre> python3 preprocess/preprocess-vcc2018.py </code></pre>
-8. kaldi 설치 - ppg 파일 추출시 필요 (8~11번은 필요 없음)
-9. 다시 ppg폴더로 와서 model/timit_sp_ppg_mono 폴더 생성후 아래 구글드라이브 링크의 .zip 파일 다운후 압축해제
+5. 将vcc2018_training文件夹以train的名义存储在corpus文件夹中
+6. 将vcc2018_evaluation文件夹以test的名称保存在corpus文件夹中
+7. 数据预处理 <code><pre> python3 preprocess/preprocess-vcc2018.py </code></pre>
+8. kaldi 安装 - ppg 文件提取需要 (8~11不需要编号)
+9. 再回到 ppg文件夹，生成 model/timit_sp_ppg_mono 创建文件夹后，下面的google drive链接 .zip 下载文件后解除压缩
 10. https://drive.google.com/file/d/1cBmWiQ3GYW9uvrm_AeModCwBT5b-fDVQ/view?usp=sharing 
-11. 다시 ppg 폴더로 와서 <code><pre> python3 ppg_vcc2018.py </code></pre> 
-12. VAE 학습 -> Voice conversion -> MCD -> CycleVAE 학습 -> Voice conversion -> MCD <code><pre> bash run_all.sh </code></pre>
-13. 각 모델별 MCD 및 MSD 값 확인 <code><pre> python3 print_stat.py </code></pre> 
-14. Loss graph 출력 <code><pre> bash run_graph.sh </code></pre>
+11. 再次进入 ppg 文件夹 里 <code><pre> python3 ppg_vcc2018.py </code></pre> 
+12. VAE 学习 -> Voice conversion -> MCD -> CycleVAE 学习 -> Voice conversion -> MCD <code><pre> bash run_all.sh </code></pre>
+13. 确认每个型号的MCD和MSD值 <code><pre> python3 print_stat.py </code></pre> 
+14. Loss graph 输出 <code><pre> bash run_graph.sh </code></pre>
 
