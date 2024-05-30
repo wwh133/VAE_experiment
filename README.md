@@ -1,23 +1,23 @@
-# CycleVAE 실험 코드
-## 폴더 test
+# CycleVAE 实验代码
+## 文件夹 test
 - corpus: VCC2018 코퍼스
-- preprocess: 각 코퍼스 별 preprocess 코드 모음 (현재는 VCC2018만 존재)
-- data: VCC2018 코퍼스 preprocess된 결과 저장
-- model: 각 방법을 적용한 VAE 모델 저장
-- result: 각 VAE 모델로 변환한 음성 저장
-- calculate: mcd, msd, gv 계산하는 코드 모음
-- stats: 모델별 mcd, msd 결과 저장
-- log: 코드 실행시 콘솔에 출력되는 부분 텍스트로 저장
-## 파일
-- model.py: PyTorch 기반 VAE 모델
-- train_base.py: VAE1 VAE2 VAE3 MD 학습
-- train_vae3_next.py: VAE3 모델 기반으로 각 방법 적용하여 학습
-- train_md_next.py: MD 모델 기반으로 각 방법 적용하여 학습
-- convert.py: 학습된 VAE로 음성 변환
-- print_stat.py: 계산된 mcd, msd의 통계값 출력
-- loss.py: loss 계산 및 log 출력과 관련된 모듈
-- speech_tools.py: 기타 필요한 함수
-- run.sh: 실험 진행 스크립트
+- preprocess: 每个语料库的preprocess代码集(目前只有VCC2018万)
+- data: 保存VCC2018 corpus preprocess的结果
+- model: 使用各种方法存储VAE模型
+- result: 存储转换成各个VAE模型的语音
+- calculate: 计算mcd, msd, gv的代码集
+- stats: 按型号存储mcd、msd结果
+- log: 代码执行时，保存到控制台输出的部分文本
+## 文件
+- model.py: 基于PyTorch的VAE模型
+- train_base.py: VAE1 VAE2 VAE3 MD 学习
+- train_vae3_next.py: 以vae3模型为基础，应用各种方法进行学习
+- train_md_next.py: 以md模型为基础，应用各种方法学习
+- convert.py: 将语音转换成已学习的VAE
+- print_stat.py: 计算过的mcd, msd的统计值输出
+- loss.py:  loss计算和log输出相关的模块
+- speech_tools.py: 其他必要的函数
+- run.sh: 实验进行脚本
 
 ## 세팅방법 (다운받은 프로젝트 폴더 내에서 실행)
 0. 가상환경 생성 <code><pre> virtualenv </code></pre> <code><pre> source venv/bin/activate </code></pre>
