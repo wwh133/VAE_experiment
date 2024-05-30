@@ -35,7 +35,7 @@
 10. https://drive.google.com/file/d/1cBmWiQ3GYW9uvrm_AeModCwBT5b-fDVQ/view?usp=sharing 
 11. 再次进入 ppg 文件夹 里 <code><pre> python3 ppg_vcc2018.py </code></pre> 
 ——语音转换（使用了PyTorch框架和Kaldi工具包）\n
-      处理训练集和开发集的数据，并生成所需的PPG特征文件。\n
+      【处理训练集和开发集的数据，并生成所需的PPG特征文件。】\n
 主要目的：加载 一个预训练的BiGRU-HMM（双向门控循环单元-隐马尔可夫模型）网络，\n
           并 将该网络应用于提取训练集和开发集数据的特征，\n
           然后 生成Pseudo-Periodic-Gains（伪周期增益，简称PPG），这是一种语音特征表示，常用于语音转换任务。
