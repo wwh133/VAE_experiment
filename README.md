@@ -33,8 +33,12 @@
 8. kaldi 安装 - ppg 文件提取需要 (8~11不需要编号)
 9. 再回到 ppg文件夹，生成 model/timit_sp_ppg_mono 创建文件夹后，下面的google drive链接 .zip 下载文件后解除压缩
 10. https://drive.google.com/file/d/1cBmWiQ3GYW9uvrm_AeModCwBT5b-fDVQ/view?usp=sharing 
-11. 再次进入 ppg 文件夹 里 <code><pre> python3 ppg_vcc2018.py </code></pre> 
-12. VAE 学习 -> Voice conversion -> MCD -> CycleVAE 学习 -> Voice conversion -> MCD <code><pre> bash run_all.sh </code></pre>
-13. 确认每个型号的MCD和MSD值 <code><pre> python3 print_stat.py </code></pre> 
-14. Loss graph 输出 <code><pre> bash run_graph.sh </code></pre>
+11. 再次进入 ppg 文件夹 里 <code><pre> python3 ppg_vcc2018.py </code></pre> \n
+——语音转换（使用了PyTorch框架和Kaldi工具包）
+主要目的：加载 一个预训练的BiGRU-HMM（双向门控循环单元-隐马尔可夫模型）网络，
+          并 将该网络应用于提取训练集和开发集数据的特征，
+          然后 生成Pseudo-Periodic-Gains（伪周期增益，简称PPG），这是一种语音特征表示，常用于语音转换任务。
+13. VAE 学习 -> Voice conversion -> MCD -> CycleVAE 学习 -> Voice conversion -> MCD <code><pre> bash run_all.sh </code></pre>
+14. 确认每个型号的MCD和MSD值 <code><pre> python3 print_stat.py </code></pre> 
+15. Loss graph 输出 <code><pre> bash run_graph.sh </code></pre>
 
