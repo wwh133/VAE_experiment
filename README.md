@@ -5,15 +5,16 @@
 - data: 保存VCC2018 corpus preprocess的结果
 - model: 使用各种方法存储VAE模型
 - result: 存储转换成各个VAE模型的语音
-- calculate: 计算mcd, msd, gv的代码集
+- calculate: 计算mcd, msd, gv的代码集【用于计算性能指标】
 - stats: 按型号存储mcd、msd结果
 - log: 代码执行时，保存到控制台输出的部分文本
 ## 文件
 - model.py: 基于PyTorch的VAE模型
-- train_base.py: VAE1 VAE2 VAE3 MD 学习
+- train_base.py: VAE1 VAE2 VAE3 MD 学习【用于基础训练】
+- train_further.py: 【用于进一步训练，可能涉及到更复杂的训练策略】
 - train_vae3_next.py: 以vae3模型为基础，应用各种方法进行学习
 - train_md_next.py: 以md模型为基础，应用各种方法学习
-- convert.py: 将语音转换成已学习的VAE
+- convert.py: 将语音转换成已学习的VAE【用于模型转换】
 - print_stat.py: 计算过的mcd, msd的统计值输出
 - loss.py:  loss计算和log输出相关的模块
 - speech_tools.py: 其他必要的函数
